@@ -1,0 +1,12 @@
+.navList {
+  display: flex;
+  list-style-type: none;
+}
+.navItem {
+  margin: 0 0.3rem;
+}
+.navLink {
+  background: rosybrown;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}

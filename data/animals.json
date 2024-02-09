@@ -1,0 +1,58 @@
+{
+  "animals": [
+    {
+      "name": "cat",
+      "class": "mammal",
+      "legs": "4",
+      "marcupial": false
+    },
+    {
+      "name": "koala",
+      "class": "mammal",
+      "legs": "4",
+      "marcupial": true
+    },
+    {
+      "name": "kangaroo",
+      "class": "mammal",
+      "legs": "2",
+      "marcupial": true
+    },
+    {
+      "name": "human",
+      "class": "mammal",
+      "legs": "2",
+      "marcupial": false
+    },
+    {
+      "name": "dog",
+      "class": "mammal",
+      "legs": "4",
+      "marcupial": false
+    },
+    {
+      "name": "bilby",
+      "class": "mammal",
+      "legs": "4",
+      "marcupial": true
+    },
+    {
+      "name": "Bulldog Bat",
+      "class": "mammal",
+      "legs": "2",
+      "marcupial": false
+    },
+    {
+      "name": "snake",
+      "class": "reptile",
+      "legs": "0",
+      "marcupial": false
+    },
+    {
+      "name": "lizard",
+      "class": "reptile",
+      "legs": "4",
+      "marcupial": false
+    }
+  ]
+}
