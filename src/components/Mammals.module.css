@@ -1,0 +1,17 @@
+.heading {
+  font-weight: 600;
+  color: rgb(0, 81, 255);
+}
+.heading:first-child {
+  background: rgb(243, 253, 149);
+  border-radius: 2px;
+  padding: 0 0.2rem;
+}
+
+.list {
+  list-style-type: none;
+}
+.listItem {
+  border-bottom: 1px solid rgb(220, 220, 220);
+  margin-bottom: 0.5rem;
+}

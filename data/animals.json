@@ -1,58 +1,130 @@
 {
   "animals": [
     {
-      "name": "cat",
-      "class": "mammal",
+      "name": "cats",
+      "scientific_name": "Felis Catus",
+      "class": "mammals",
       "legs": "4",
-      "marcupial": false
+      "marcupial": false,
+      "locations": [
+        "Africa",
+        "Asia",
+        "Central-America",
+        "Eurasia",
+        "Europe",
+        "North-America",
+        "Oceania",
+        "South-America"
+      ]
     },
     {
-      "name": "koala",
-      "class": "mammal",
+      "name": "koalas",
+      "scientific_name": "Phascolarctos Cinereus",
+      "class": "mammals",
       "legs": "4",
-      "marcupial": true
+      "marcupial": true,
+      "locations": ["Oceania"]
     },
     {
-      "name": "kangaroo",
-      "class": "mammal",
+      "name": "kangaroos",
+      "scientific_name": "Macropus",
+      "class": "mammals",
       "legs": "2",
-      "marcupial": true
+      "marcupial": true,
+      "locations": ["Oceania"]
     },
     {
-      "name": "human",
-      "class": "mammal",
+      "name": "humans",
+      "scientific_name": "Homo Sapiens Sapiens",
+      "class": "mammals",
       "legs": "2",
-      "marcupial": false
+      "marcupial": false,
+      "locations": [
+        "Africa",
+        "Asia",
+        "Central-America",
+        "Eurasia",
+        "Europe",
+        "North-America",
+        "Oceania",
+        "South-America"
+      ]
     },
     {
-      "name": "dog",
-      "class": "mammal",
+      "name": "dogs",
+      "scientific_name": "Canis Lupus familiaris",
+      "class": "mammals",
       "legs": "4",
-      "marcupial": false
+      "marcupial": false,
+      "locations": [
+        "Africa",
+        "Asia",
+        "Central-America",
+        "Eurasia",
+        "Europe",
+        "North-America",
+        "Oceania",
+        "South-America"
+      ]
     },
     {
-      "name": "bilby",
-      "class": "mammal",
+      "name": "(Greater) Bilbys",
+      "scientific_name": "Macrotis",
+      "class": "mammals",
       "legs": "4",
-      "marcupial": true
+      "marcupial": true,
+      "locations": ["Oceania"]
     },
     {
-      "name": "Bulldog Bat",
-      "class": "mammal",
+      "name": "bats",
+      "scientific_name": "Chiroptera",
+      "class": "mammals",
       "legs": "2",
-      "marcupial": false
+      "marcupial": false,
+      "locations": [
+        "Africa",
+        "Asia",
+        "Central-America",
+        "Eurasia",
+        "Europe",
+        "North-America",
+        "Oceania",
+        "South-America"
+      ]
     },
     {
-      "name": "snake",
-      "class": "reptile",
+      "name": "snakes",
+      "scientific_name": "Seprentes",
+      "class": "reptiles",
       "legs": "0",
-      "marcupial": false
+      "marcupial": false,
+      "locations": [
+        "Africa",
+        "Asia",
+        "Central-America",
+        "Eurasia",
+        "Europe",
+        "North-America",
+        "Oceania",
+        "South-America"
+      ]
     },
     {
-      "name": "lizard",
-      "class": "reptile",
+      "name": "lizards",
+      "scientific_name": "Lacertilia",
+      "class": "reptiles",
       "legs": "4",
-      "marcupial": false
+      "marcupial": false,
+      "locations": [
+        "Africa",
+        "Asia",
+        "Central-America",
+        "Eurasia",
+        "Europe",
+        "North-America",
+        "Oceania",
+        "South-America"
+      ]
     }
   ]
 }

@@ -1,12 +1,22 @@
 /* eslint-disable react/prop-types */
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
+// import { useAnimals } from "../contexts/AnimalsContext";
 
-function Homepage({ animals, isLoading }) {
+function Homepage() {
   return (
     <>
-      <Header animals={animals} isLoading={isLoading} />
-      <h1>Context Matters</h1>
+      <Header />
+      <h1>
+        Context Matters{" "}
+        <span style={{ fontSize: `1rem`, color: "darkgreen" }}>
+          {" "}
+          so do animals
+        </span>
+      </h1>
       <p>This app is a demo of React Router with context.</p>
+
+      <Outlet />
     </>
   );
 }
