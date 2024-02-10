@@ -6,12 +6,14 @@ const AnimalsContext = createContext();
 
 function AnimalsProvider({ children }) {
   const [animals, setAnimals] = useState({});
-  const [isLoading, setIsloading] = useState(false);
+
+  // Set isLoading to true to prevent nested route components loading before the data.
+  const [isLoading, setIsloading] = useState(true);
+  const [currentAnimal, setCurrentAnimal] = useState({});
 
   useEffect(function () {
     async function fetchAnimals() {
       try {
-        setIsloading(true);
         const res = await fetch(`${BASE_URL}/animals`);
         const data = await res.json();
         setAnimals(data);
@@ -24,8 +26,21 @@ function AnimalsProvider({ children }) {
     fetchAnimals();
   }, []);
 
+  async function getAnimal(id) {
+    try {
+      const res = await fetch(`${BASE_URL}/animals/${id}`);
+      const data = await res.json();
+      setCurrentAnimal(data);
+    } catch {
+      alert("Error fetching animals");
+    } finally {
+      setIsloading(false);
+    }
+  }
   return (
-    <AnimalsContext.Provider value={{ animals, isLoading }}>
+    <AnimalsContext.Provider
+      value={{ animals, isLoading, getAnimal, currentAnimal }}
+    >
       {children}
     </AnimalsContext.Provider>
   );

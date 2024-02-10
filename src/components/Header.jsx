@@ -16,7 +16,7 @@ function Header() {
   const animalClasses = new Set();
 
   animals.filter((animal) => {
-    const className = animal.class;
+    const className = animal.classification;
     if (!animalClasses.has(className)) {
       animalClasses.add(className);
       return true;
@@ -24,6 +24,13 @@ function Header() {
     return false;
   });
 
+  // const animalClasses = animals.reduce((arr, animal) => {
+  //   if (!arr.map((thing) => thing.animal).includes(animal.class)) {
+  //     return [...arr, animal.class];
+  //   } else {
+  //     return arr;
+  //   }
+  // }, []);
   console.log(animalClasses);
   return (
     <header>

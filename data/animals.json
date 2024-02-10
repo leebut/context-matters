@@ -3,7 +3,7 @@
     {
       "name": "cats",
       "scientific_name": "Felis Catus",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "4",
       "marcupial": false,
       "locations": [
@@ -15,28 +15,31 @@
         "North-America",
         "Oceania",
         "South-America"
-      ]
+      ],
+      "id": 1
     },
     {
       "name": "koalas",
       "scientific_name": "Phascolarctos Cinereus",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "4",
       "marcupial": true,
-      "locations": ["Oceania"]
+      "locations": ["Oceania"],
+      "id": 2
     },
     {
       "name": "kangaroos",
       "scientific_name": "Macropus",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "2",
       "marcupial": true,
-      "locations": ["Oceania"]
+      "locations": ["Oceania"],
+      "id": 3
     },
     {
       "name": "humans",
       "scientific_name": "Homo Sapiens Sapiens",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "2",
       "marcupial": false,
       "locations": [
@@ -48,12 +51,13 @@
         "North-America",
         "Oceania",
         "South-America"
-      ]
+      ],
+      "id": 4
     },
     {
       "name": "dogs",
       "scientific_name": "Canis Lupus familiaris",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "4",
       "marcupial": false,
       "locations": [
@@ -65,20 +69,22 @@
         "North-America",
         "Oceania",
         "South-America"
-      ]
+      ],
+      "id": 5
     },
     {
       "name": "(Greater) Bilbys",
       "scientific_name": "Macrotis",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "4",
       "marcupial": true,
-      "locations": ["Oceania"]
+      "locations": ["Oceania"],
+      "id": 6
     },
     {
       "name": "bats",
       "scientific_name": "Chiroptera",
-      "class": "mammals",
+      "classification": "mammals",
       "legs": "2",
       "marcupial": false,
       "locations": [
@@ -90,12 +96,13 @@
         "North-America",
         "Oceania",
         "South-America"
-      ]
+      ],
+      "id": 7
     },
     {
       "name": "snakes",
       "scientific_name": "Seprentes",
-      "class": "reptiles",
+      "classification": "reptiles",
       "legs": "0",
       "marcupial": false,
       "locations": [
@@ -107,12 +114,13 @@
         "North-America",
         "Oceania",
         "South-America"
-      ]
+      ],
+      "id": 8
     },
     {
       "name": "lizards",
       "scientific_name": "Lacertilia",
-      "class": "reptiles",
+      "classification": "reptiles",
       "legs": "4",
       "marcupial": false,
       "locations": [
@@ -124,7 +132,8 @@
         "North-America",
         "Oceania",
         "South-America"
-      ]
+      ],
+      "id": 9
     }
   ]
 }

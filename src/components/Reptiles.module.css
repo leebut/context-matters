@@ -10,16 +10,8 @@
 
 .list {
   list-style-type: none;
-  max-width: fit-content;
 }
 .listItem {
+  border-bottom: 1px solid rgb(220, 220, 220);
   margin-bottom: 0.5rem;
-  text-decoration: none;
-  background: rgb(226, 226, 226);
-  padding: 0.3rem;
-  border-radius: 0.4rem;
-}
-
-.link {
-  text-decoration: none;
 }
