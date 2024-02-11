@@ -16,6 +16,7 @@
         "Oceania",
         "South-America"
       ],
+      "imageUrl": "/cat.jpg",
       "id": 1
     },
     {
@@ -25,6 +26,7 @@
       "legs": "4",
       "marcupial": true,
       "locations": ["Oceania"],
+      "imageUrl": "/koala.jpg",
       "id": 2
     },
     {
@@ -34,6 +36,7 @@
       "legs": "2",
       "marcupial": true,
       "locations": ["Oceania"],
+      "imageUrl": "/kangaroo.jpg",
       "id": 3
     },
     {
@@ -52,6 +55,7 @@
         "Oceania",
         "South-America"
       ],
+      "imageUrl": "/human.jpg",
       "id": 4
     },
     {
@@ -70,15 +74,17 @@
         "Oceania",
         "South-America"
       ],
+      "imageUrl": "/dog.jpg",
       "id": 5
     },
     {
-      "name": "(Greater) Bilbys",
+      "name": "Bilbys",
       "scientific_name": "Macrotis",
       "classification": "mammals",
       "legs": "4",
       "marcupial": true,
       "locations": ["Oceania"],
+      "imageUrl": "/bilby.jpg",
       "id": 6
     },
     {
@@ -97,6 +103,7 @@
         "Oceania",
         "South-America"
       ],
+      "imageUrl": "/bat.jpg",
       "id": 7
     },
     {
