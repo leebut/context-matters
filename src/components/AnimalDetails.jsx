@@ -2,6 +2,7 @@ import styles from "./AnimalDetails.module.css";
 import { useAnimals } from "../contexts/AnimalsContext";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import Loading from "./Loading";
 
 function AnimalDetails() {
   const { id } = useParams();
@@ -25,7 +26,7 @@ function AnimalDetails() {
   } = currentAnimal;
 
   if (isLoading) {
-    return "Fetching the animal.";
+    return <Loading />;
   }
   return (
     // Photos from Unsplash.com
@@ -35,12 +36,11 @@ function AnimalDetails() {
     // bats - @davidclode
     // dog - @marliesestreefland
     // fireman - @shotbygaines
+    // snake - @acastrophotocr
+    // lizzard - @ricklipsett
     // bilby - Pixabay AI
 
     <section className={styles.animalDetailsPage}>
-      {/* {isLoading ? (
-        <p>Fetching animals</p>
-      ) : ( */}
       <div className={styles.outerWrapper}>
         <div className={styles.header}>
           <h1>{name}</h1>

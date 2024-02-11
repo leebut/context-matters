@@ -8,6 +8,7 @@ function AnimalsProvider({ children }) {
   const [animals, setAnimals] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [currentAnimal, setCurrentAnimal] = useState({});
+  const [currentClassification, setCurrentClassification] = useState("");
 
   useEffect(function () {
     async function fetchAnimals() {
@@ -39,7 +40,14 @@ function AnimalsProvider({ children }) {
   }
   return (
     <AnimalsContext.Provider
-      value={{ animals, isLoading, getAnimal, currentAnimal }}
+      value={{
+        animals,
+        isLoading,
+        getAnimal,
+        currentAnimal,
+        currentClassification,
+        setCurrentClassification,
+      }}
     >
       {children}
     </AnimalsContext.Provider>

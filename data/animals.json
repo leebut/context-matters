@@ -122,6 +122,7 @@
         "Oceania",
         "South-America"
       ],
+      "imageUrl": "/snake.jpg",
       "id": 8
     },
     {
@@ -140,6 +141,7 @@
         "Oceania",
         "South-America"
       ],
+      "imageUrl": "/lizzard.jpg",
       "id": 9
     }
   ]
