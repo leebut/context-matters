@@ -33,7 +33,7 @@ function AnimalsProvider({ children }) {
       const data = await res.json();
       setCurrentAnimal(data);
     } catch {
-      alert("Error fetching animals");
+      alert("Error: Make sure to use 'npm run server'");
     } finally {
       setIsLoading(false);
     }
