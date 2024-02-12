@@ -4,13 +4,10 @@ import styles from "./TopNav.module.css";
 import { useAnimals } from "../contexts/AnimalsContext";
 
 function TopNav() {
-  const { animals, isLoading, setCurrentClassification } = useAnimals();
-  if (isLoading) {
-    return "Fetching the animals for the nav.";
-  }
+  const { animals, setCurrentClassification } = useAnimals();
 
   if (!animals.length) {
-    return "This is an abomination!";
+    return "Fetching animals!";
   }
 
   const animalClasses = new Set();
