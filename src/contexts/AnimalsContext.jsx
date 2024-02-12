@@ -18,7 +18,7 @@ function AnimalsProvider({ children }) {
         const data = await res.json();
         setAnimals(data);
       } catch {
-        alert("Error fetching animals");
+        alert("Error: execute, 'npm run server'");
       } finally {
         setIsLoading(false);
       }
