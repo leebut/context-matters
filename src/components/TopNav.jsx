@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import styles from "./TopNav.module.css";
 import { useAnimals } from "../contexts/AnimalsContext";
 
@@ -29,9 +29,9 @@ function TopNav() {
       <ul className={styles.navList}>
         {Array.from(animalClasses).map((animalClass) => (
           <li key={animalClass} className={styles.navItem}>
-            <NavLink to={animalClass} className={styles.navLink}>
+            {/* <NavLink to={animalClass} className={styles.navLink}>
               {animalClass}
-            </NavLink>
+            </NavLink> */}
             <button
               value={animalClass}
               onClick={(e) => setCurrentClassification(e.target.value)}

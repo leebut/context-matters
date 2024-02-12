@@ -10,3 +10,18 @@
   padding: 0.1rem 0.2rem;
   border-radius: 0.2rem;
 }
+.navList button {
+  background: rgb(0, 140, 255);
+  border: solid 1px black;
+  padding: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.navList button:hover {
+  background: rgb(41, 159, 255);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+}

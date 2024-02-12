@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useAnimals } from "../contexts/AnimalsContext";
 import styles from "./AnimalList.module.css";
 function AnimalList() {
@@ -12,19 +12,18 @@ function AnimalList() {
           {animals.map(
             (animal) =>
               animal.classification === currentClassification && (
-                <Link
-                  key={animal.id}
-                  to={`${currentClassification}/${animal.id}`}
-                  className={styles.link}
-                >
-                  <li className={styles.listItem}>
+                <li key={animal.id} className={styles.listItem}>
+                  <NavLink
+                    to={`${currentClassification}/${animal.id}`}
+                    className={styles.link}
+                  >
                     <span className={styles.heading}>Common name:</span>{" "}
                     {animal.name}
                     <br />
                     <span className={styles.heading}>Scientific name: </span>
                     <em>({animal.scientific_name})</em>
-                  </li>
-                </Link>
+                  </NavLink>
+                </li>
               )
           )}
         </ul>

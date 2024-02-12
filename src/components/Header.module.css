@@ -1,10 +1,19 @@
 .headerLayout {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding-left: 2rem;
   min-height: 5rem;
   background: rgb(161, 255, 161);
 }
+.headerLayout h1 {
+  margin-left: 10rem;
+}
+.headerLayout h1 span {
+  font-size: 1.1rem;
+  font-variant: small-caps;
+}
+
 .navList {
   display: flex;
   list-style-type: none;

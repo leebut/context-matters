@@ -5,11 +5,6 @@
   font-weight: 600;
   color: rgb(0, 81, 255);
 }
-.heading:first-child {
-  background: rgb(243, 253, 149);
-  border-radius: 2px;
-  padding: 0 0.2rem;
-}
 
 .list {
   list-style-type: none;
@@ -20,11 +15,26 @@
 .listItem {
   margin-bottom: 0.5rem;
   text-decoration: none;
-  background: rgb(226, 226, 226);
+
   padding: 0.3rem;
   border-radius: 0.4rem;
 }
 
 .link {
+  display: block;
+  padding: 0.2rem;
+  margin-right: 0.3rem;
   text-decoration: none;
+  border: solid 1px transparent;
+  box-shadow: 3px 3px 4px transparent;
+  transition: all 0.25s;
+}
+.link:hover {
+  background: rgb(221, 243, 255);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  border: solid 1px black;
+}
+:global .active {
+  background: rgb(199, 235, 255);
+  border: solid 1px black;
 }

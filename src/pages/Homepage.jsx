@@ -10,14 +10,10 @@ function Homepage() {
   return (
     <>
       <Header />
-      <h1>
-        Context Matters{" "}
-        <span style={{ fontSize: `1rem`, color: "darkgreen" }}>
-          {" "}
-          so do animals
-        </span>
-      </h1>
-      <p>This app is a demo of React Router with context.</p>
+
+      <p className={styles.paragraph}>
+        This app is a demo of React Router with context.
+      </p>
       <section className={styles.homepageLayout}>
         <AnimalList />
         <Outlet />

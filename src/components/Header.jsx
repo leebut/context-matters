@@ -8,6 +8,9 @@ function Header() {
   return (
     <header className={styles.headerLayout}>
       <TopNav />
+      <h1>
+        Context Matters<span>&nbsp; - so do animals</span>
+      </h1>
     </header>
   );
 }
