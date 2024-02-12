@@ -1,0 +1,9 @@
+.homepageLayout {
+  margin: auto;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: solid 1px rgb(224, 224, 224);
+}

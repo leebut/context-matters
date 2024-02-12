@@ -1,16 +1,20 @@
 .footerLayout {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
   width: 100vw;
   display: flex;
+  margin-top: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: rgb(0, 102, 255);
   color: white;
   font-weight: 600;
+}
+.footerLayout p {
+  font-size: 0.8rem;
 }
 .footerLayout a {
   color: white;

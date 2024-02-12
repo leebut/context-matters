@@ -4,7 +4,7 @@ import styles from "./AnimalList.module.css";
 function AnimalList() {
   const { animals, currentClassification } = useAnimals();
   return (
-    <section>
+    <section className={styles.animalListLayout}>
       <h1>{currentClassification}</h1>
 
       {animals.length > 0 ? (
@@ -14,7 +14,7 @@ function AnimalList() {
               animal.classification === currentClassification && (
                 <Link
                   key={animal.id}
-                  to={`${animal.id}`}
+                  to={`${currentClassification}/${animal.id}`}
                   className={styles.link}
                 >
                   <li className={styles.listItem}>

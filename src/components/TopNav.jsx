@@ -4,7 +4,7 @@ import styles from "./TopNav.module.css";
 import { useAnimals } from "../contexts/AnimalsContext";
 
 function TopNav() {
-  const { animals, isLoading } = useAnimals();
+  const { animals, isLoading, setCurrentClassification } = useAnimals();
   if (isLoading) {
     return "Fetching the animals for the nav.";
   }
@@ -32,6 +32,12 @@ function TopNav() {
             <NavLink to={animalClass} className={styles.navLink}>
               {animalClass}
             </NavLink>
+            <button
+              value={animalClass}
+              onClick={(e) => setCurrentClassification(e.target.value)}
+            >
+              {animalClass}
+            </button>
           </li>
         ))}
       </ul>

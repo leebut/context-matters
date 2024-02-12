@@ -12,13 +12,13 @@ function Footer() {
       <p>
         cats-<span className={styles.yellow}>@bogdanf</span>, koala-
         <span className={styles.yellow}>@avishalz</span>, Kangaroo-
-        <span className={styles.yellow}>@johntorcasio</span>,
+        <span className={styles.yellow}>@johntorcasio</span>, bats-
+        <span className={styles.yellow}>@davidclode</span>, dog-
+        <span className={styles.yellow}>@marliesestreefland</span>,
         <br />
-        bats-<span className={styles.yellow}>@davidclode</span>, dog-
-        <span className={styles.yellow}>@marliesestreefland</span>, fireman-
-        <span className={styles.yellow}>@shotbygaines</span>,
-        <br />
-        snake-<span className={styles.yellow}>@acastrophotocr</span>, lizzard-
+        fireman-
+        <span className={styles.yellow}>@shotbygaines</span>, snake-
+        <span className={styles.yellow}>@acastrophotocr</span>, lizzard-
         <span className={styles.yellow}>@ricklipsett</span>, bilby-
         <span className={styles.yellow}>Pixabay AI</span>
       </p>
