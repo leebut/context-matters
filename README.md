@@ -1,9 +1,12 @@
 # Overview
 
 This project is for practising context and context provider, and React router.
-
 The animalDetails component receives the animal ID param from the URL.
 
-## Issues
+## json-server
 
-The header component is re-rendered every time an animal is selected from the AnimalList component.
+Please execure the command, `npm run server``, to have the animals data served.
+
+## Issues to look into
+
+The TopNav component is re-rendered every time an animal is selected from the AnimalList component.
