@@ -12,7 +12,7 @@ function AnimalDetails() {
     function () {
       getAnimal(id);
     },
-    [id]
+    [id, getAnimal]
   );
 
   const {

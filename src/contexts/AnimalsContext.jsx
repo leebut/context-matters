@@ -1,5 +1,11 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 const BASE_URL = "http://localhost:8000";
 const AnimalsContext = createContext();
@@ -15,6 +21,7 @@ function AnimalsProvider({ children }) {
       try {
         setIsLoading(true);
         const res = await fetch(`${BASE_URL}/animals`);
+
         const data = await res.json();
         setAnimals(data);
       } catch {
@@ -26,10 +33,11 @@ function AnimalsProvider({ children }) {
     fetchAnimals();
   }, []);
 
-  async function getAnimal(id) {
+  const getAnimal = useCallback(async function getAnimal(id) {
     try {
       setIsLoading(true);
       const res = await fetch(`${BASE_URL}/animals/${id}`);
+
       const data = await res.json();
       setCurrentAnimal(data);
     } catch {
@@ -37,7 +45,8 @@ function AnimalsProvider({ children }) {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, []);
+
   return (
     <AnimalsContext.Provider
       value={{
